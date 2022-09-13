@@ -1,0 +1,60 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "quiet": true,
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.base.json",
+    "tsconfigRootDir": "./"
+  },
+  "rules": {
+    "no-underscore-dangle": "off",
+    "variable-name": [0, "allow-leading-underscore"],
+    "@typescript-eslint/indent": ["error", 4],
+    "@typescript-eslint/no-empty-function": 1,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/no-empty-interface": 1,
+    "@typescript-eslint/no-use-before-define": 1,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "comma", "requireLast": false }, "singleline": { "delimiter": "comma" } }],
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/semi": ["error"],
+    "@typescript-eslint/no-namespace": "off",
+    "object-curly-spacing": ["error", "always"],
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "import/no-duplicates": 2,
+    "prefer-destructuring": 1,
+    "prefer-promise-reject-errors": 0,
+    "no-use-before-define": 1,
+    "react/prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/no-array-index-key": 0,
+    "no-useless-constructor": 1,
+    "no-console": 1,
+    "react/destructuring-assignment": 0,
+    "quotes": [2, "single", "avoid-escape"],
+    "max-classses-per-file": 0,
+    "lines-between-class-members": "off",
+    "react/display-name": 0,
+    "arrow-parens": 0,
+    "prefer-arrow-callback": 1,
+    "import/order": 1,
+    "sort-imports": 1
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+    // "prettier/@typescript-eslint"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ]
+}

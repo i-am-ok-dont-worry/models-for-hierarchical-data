@@ -1,0 +1,10 @@
+{
+  "include": ["./packages/**/*"],
+  "compilerOptions": {
+    "target": "ES6",
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ]
+  }
+}
